@@ -1,0 +1,29 @@
+@font-face {
+  font-family: playfair;
+  src: url('./assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: openSans;
+  src: url('./assets/fonts/OpenSans-VariableFont_wdth,wght.ttf');
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html,
+body,
+#root{
+  height: 100%;
+  background-color: #010026;
+  @apply text-white font-play;
+
+}
+@layer base{
+  p{
+    @apply font-open_Sans;
+  }
+}
